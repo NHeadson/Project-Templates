@@ -1,0 +1,131 @@
+/*
+
+
+===================CSS Variables=================
+:root {
+    --primary-color: #0044cc;
+    --secondary-color: #003399;
+    --background-color: #f4f4f4;
+    --text-color: #333333;
+    --heading-color: #222222;
+    --card-bg-color: #ffffff;
+    --button-bg-color: #0044cc;
+    --button-hover-color: #003399;
+    --border-color: #dddddd;
+}
+
+====================Global Reset=====================
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+==================General Reusable Styles=================
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+}
+
+.navbar a {
+    color: white;
+    margin: 0 0.5rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--card-bg-color);
+    color: var(--heading-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+.card h3 {
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color: var(--button-bg-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+================Responsive Design====================
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+*/
